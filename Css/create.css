@@ -48,7 +48,6 @@ nav,
   position: relative;
   color: red;
   transition: all 0.3s linear;
-  font-size: 13px;
 }
 
 .header__logo {
@@ -463,5 +462,4 @@ nav,
 .footer__link:hover {
   color: red;
   transition: all 0.3s linear;
-  font-size: 13px;
 }
