@@ -17,8 +17,9 @@ li {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
+  padding: 0 15px;
 }
 
 nav,
@@ -35,19 +36,17 @@ nav,
 
 .navbar__link {
   font-family: "Barlow";
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.923077px;
+  letter-spacing: 0.9px;
   text-transform: uppercase;
   color: #83888f;
+  transition: all 0.3s ease;
 }
 
 .navbar__link:hover {
-  color: #ff0000;
-  transition: all 1s ease;
-  font-size: 20px;
+  color: red;
+  font-weight: 900;
 }
 
 .header__logo {
@@ -56,7 +55,6 @@ nav,
 }
 
 .intro {
-  height: 500px;
   background-image: url("../Images/bg\ img\ \(1\).png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -77,9 +75,7 @@ nav,
 
 .intro__title {
   width: 500px;
-  height: 150px;
   font-family: "Fraunces";
-  font-style: normal;
   font-weight: 900;
   font-size: 72px;
   line-height: 72px;
@@ -89,16 +85,9 @@ nav,
 .intro__text {
   width: 445px;
   font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  /* or 162% */
-
   color: #fefcf7;
-
-  mix-blend-mode: normal;
-  opacity: 0.8;
   margin: 30px 0;
 }
 
@@ -114,9 +103,19 @@ nav,
   color: white;
 }
 
+.intro__btn:hover{
+    background: #48a8a5;
+
+}
+
+
+.intro__btn:active{
+    background: #5c9593;
+
+}
+
 .collection {
   padding: 100px 0;
-  width: 100%;
 }
 
 .collection__container {
@@ -128,8 +127,6 @@ nav,
   font-family: "Fraunces";
   font-size: 150px;
   font-weight: 900;
-  margin: 0;
-  line-height: 1;
   background: linear-gradient(
     180deg,
     rgba(131, 136, 143, 0.5) 0%,
@@ -137,7 +134,6 @@ nav,
   );
   background-clip: text;
   color: transparent;
-  text-transform: lowercase;
 }
 
 .collection__list {
@@ -148,23 +144,20 @@ nav,
 }
 
 .collection__item {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .collection__img {
-  width: 100%;
   width: 250px;
   margin-bottom: 30px;
+  transition: 0.5s ease;
 }
 
 .collection__img:hover {
-  width: 100%;
-  width: 300px;
-  margin-bottom: 30px;
-  transition: all 1s ease-in-out;
+  color: red;
+  padding: 5px 8px;
 }
 
 .collection__name {
@@ -180,117 +173,54 @@ nav,
   line-height: 1.6;
   color: #333d4b;
   max-width: 255px;
-  margin: 0 auto;
 }
 
 .promo {
-  width: 100%;
+  margin-top: 150px;
+}
+
+.promo__container {
+  position: relative;
 }
 
 .promo__box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 1200px;
   background-color: #2c343e;
-  height: 500px;
   border-radius: 10px;
-  padding-bottom: 100px;
+  padding: 100px 50px 220px;
+  text-align: center;
 }
 
 .promo__title {
   font-family: "Fraunces";
-  font-style: normal;
   font-weight: 900;
   font-size: 40px;
-  line-height: 48px;
-  /* identical to box height, or 120% */
-  text-align: center;
-
   color: #fefcf7;
 }
 
 .promo__text {
   width: 530px;
+  margin: 20px auto;
   font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  /* or 162% */
-  text-align: center;
-
   color: #fefcf7;
-
-  mix-blend-mode: normal;
-  opacity: 0.8;
-  margin: 20px 0;
 }
 
 .promo__cards {
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 30px;
+  margin-top: -160px;
 }
 
 .promo__card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: absolute;
-  right: 100px;
   width: 350px;
   height: 320px;
   background-color: #0e8784;
-  border-radius: 5px;
+  border-radius: 8px;
+  padding: 40px 30px;
   color: white;
-}
-
-.promo__card:nth-child(1) {
-  position: absolute;
-  right: 1000px;
-  top: 1750px;
-  width: 350px;
-  height: 320px;
-  background-color: #0e8784;
-  border-radius: 5px;
-  color: white;
-}
-
-.promo__card:nth-child(2) {
-  position: absolute;
-  right: 600px;
-  top: 1750px;
-  width: 350px;
-  height: 320px;
-  background-color: #0e8784;
-  border-radius: 5px;
-  color: white;
-}
-
-.promo__card:nth-child(3) {
-  position: absolute;
-  right: 200px;
-  top: 1750px;
-  width: 350px;
-  height: 320px;
-  background-color: #0e8784;
-  border-radius: 5px;
-  color: white;
-}
-
-.promo__title-card {
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 32px;
-  /* identical to box height, or 133% */
   text-align: center;
-
-  color: #fefcf7;
 }
 
 .promo__logo {
@@ -299,123 +229,78 @@ nav,
   margin: 25px 0;
 }
 
-.promo__text-card {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  /* or 162% */
-  text-align: center;
-
-  color: #fefcf7;
-  margin: 20px 0;
+.promo__title-card {
+  font-family: "Fraunces";
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
-.job {
-  width: 100%;
+.promo__text-card {
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .job__container {
   margin-top: 200px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
 .job__title {
-  align-self: start;
   font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 900;
   font-size: 24px;
-  line-height: 32px;
-  /* identical to box height, or 133% */
-  margin-bottom: 50px;
   color: #83888f;
-}
-
-.job__img {
-  align-self: start;
-  width: 791px;
-  height: 30px;
-}
-
-.job_num {
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 72px;
-  /* identical to box height, or 100% */
-
-  color: #fdd6ba;
+  margin-bottom: 50px;
 }
 
 .job__items {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 175px;
   margin: 50px 0;
 }
 
-.job__item {
-  width: 280px;
-  height: 330px;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  flex-direction: column;
+.job__num {
+  font-family: "Fraunces";
+  font-size: 72px;
+  color: #fdd6ba;
 }
 
 .job__title-item {
   font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 900;
   font-size: 32px;
-  line-height: 36px;
-  /* or 112% */
-
-  color: #333d4b;
   margin: 30px 0;
 }
 
 .job__text-item {
-  width: 375px;
-  height: 130px;
-}
-
-.job__text-item {
   width: 285px;
-  height: 130px;
   font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  /* or 162% */
-
-  color: #333d4b;
 }
 
 .job__btn {
-  align-self: start;
   width: 217px;
   height: 56px;
-  border: none;
   background: #66d2cf;
+  border: none;
   border-radius: 6px;
-  font-family: "Fraunces";
-  font-weight: 700;
-  font-size: 17px;
   color: white;
-  margin-top: 20px;
+  font-family: "Fraunces";
+  font-size: 17px;
+}
+
+.job__btn:hover {
+  background: #4db8b4;
+  
+}
+
+.job__btn:active{
+    background: #79b9b6;
+
 }
 
 .footer {
-  width: 100%;
   margin-top: 150px;
 }
 
@@ -434,17 +319,11 @@ nav,
 
 .footer__link {
   font-family: "Barlow";
-  font-style: normal;
-  font-weight: 700;
   font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.923077px;
-  text-transform: uppercase;
   color: #83888f;
+  transition: color 0.3s ease;
 }
 
 .footer__link:hover {
-  color: #ff0000;
-  transition: all 1s ease;
-  font-size: 20px;
+  color: red;
 }
