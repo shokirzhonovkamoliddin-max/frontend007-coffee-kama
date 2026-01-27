@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+nav,.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.navbar {
+  &__list {
+    gap: 50px;
+  }
+
+  &__link {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+
+    &:hover {
+      color: red;
+      transition: all 0.3s linear;
+    }
+  }
+}
+
+.header__logo {
+  width: 236px;
+  height: 26px;
+}
+
+.intro {
+  background-image: url("/Images/Group 7 (2).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 650px;
+  margin: 30px auto;
+  border-radius: 10px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__left {
+    margin: 0 100px;
+  }
+
+  &__title {
+    width: 500px;
+    height: 150px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #fefcf7;
+    margin-top: 120px;
+  }
+
+  &__text {
+    width: 445px;
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+    opacity: 0.8;
+  }
+}
+
+.our {
+  width: 100%;
+  margin-top: 100px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  &__img {
+    margin-left: 70px;
+  }
+
+  &__title {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333d4b;
+  }
+
+  &__text {
+    width: 540px;
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+    opacity: 0.8;
+    margin: 30px 0;
+  }
+}
+
+.promo {
+  width: 100%;
+  margin-top: 120px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c343e;
+    border-radius: 10px;
+  }
+
+  &__box {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 70px;
+  }
+
+  &__title {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #fefcf7;
+  }
+
+  &__text {
+    width: 540px;
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+    opacity: 0.8;
+    margin: 30px 0;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 1250px;
+    right: 185px;
+  }
+}
+
+.work {
+  width: 100%;
+  margin-top: 100px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__items {
+    display: flex;
+    gap: 150px;
+    margin-top: 70px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+
+    &:hover {
+      background-color: burlywood;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    &:active {
+      background-color: rgb(255, 145, 0);
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__title {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888f;
+  }
+
+  &__title-item {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333d4b;
+    margin: 20px 0;
+  }
+
+  &__text-item {
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+  }
+}
+
+.footer {
+  width: 100%;
+  margin-top: 150px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2c343e;
+    height: 120px;
+  }
+
+  &__logo {
+    width: 236px;
+    height: 26px;
+  }
+
+  &__link {
+    font-family: "Barlow";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+
+    &:hover {
+      color: red;
+      transition: all 0.3s linear;
+    }
+  }
+}

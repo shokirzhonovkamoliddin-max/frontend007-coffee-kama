@@ -21,7 +21,7 @@ li {
   margin: auto;
 }
 
-nav, .navbar__list {
+nav,.navbar__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,14 +53,13 @@ nav, .navbar__list {
   width: 236px;
   height: 26px;
 }
-
 .intro {
   height: 500px;
-  background-image: url("/Images/Group 7 (1).png");
+  background-image: url("/Images/Group\ 7\ \(1\).png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 650px;
+  height:650px;
   margin: 30px auto;
   border-radius: 10px;
 }
@@ -94,7 +93,9 @@ nav, .navbar__list {
   font-size: 16px;
   line-height: 26px;
   /* or 162% */
+
   color: #fefcf7;
+
   mix-blend-mode: normal;
   opacity: 0.8;
 }
@@ -142,6 +143,7 @@ nav, .navbar__list {
   font-size: 72px;
   line-height: 72px;
   /* identical to box height, or 100% */
+
   color: #ff6a00;
 }
 
@@ -169,6 +171,7 @@ nav, .navbar__list {
   font-size: 32px;
   line-height: 36px;
   /* or 112% */
+
   color: #ffffff;
   margin: 30px 0;
 }
@@ -187,6 +190,7 @@ nav, .navbar__list {
   font-size: 16px;
   line-height: 26px;
   /* or 162% */
+
   color: #c0c0c0;
 }
 
@@ -215,7 +219,6 @@ nav, .navbar__list {
   padding: 24px 0;
   border-bottom: 1px solid rgba(131, 136, 143, 0.25);
 }
-
 .number__item:hover {
   font-family: "Fraunces";
   font-size: 24px;
@@ -225,7 +228,6 @@ nav, .navbar__list {
   border-bottom: 1px solid rgba(131, 136, 143, 0.25);
   transition: all 0.3s ease;
 }
-
 .number__item:active {
   font-family: "Fraunces";
   font-size: 24px;
@@ -247,23 +249,21 @@ nav, .navbar__list {
   font-size: 24px;
   line-height: 32px;
   /* identical to box height, or 133% */
+
   color: #333d4b;
 }
 
 .number__num {
   color: #1ba334;
 }
-
 .number__num:hover {
   color: #ff7b00;
   transition: all 0.3s ease;
 }
-
 .number__num:active {
   color: #09ff00;
   transition: all 0.3s ease;
 }
-
 .number__content {
   width: 730px;
 }
@@ -286,6 +286,7 @@ nav, .navbar__list {
   font-size: 40px;
   line-height: 48px;
   /* identical to box height, or 120% */
+
   color: #83888f;
 }
 
@@ -327,6 +328,7 @@ nav, .navbar__list {
   font-size: 16px;
   line-height: 26px;
   /* or 162% */
+
   color: #333d4b;
 }
 
@@ -340,12 +342,14 @@ nav, .navbar__list {
   padding: 45px 60px;
   border-radius: 10px;
   margin-top: 88px;
+
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 40px;
   /* or 167% */
+
   color: #ffffff;
 }
 
@@ -358,7 +362,9 @@ nav, .navbar__list {
   line-height: 26px;
   /* identical to box height, or 162% */
   text-transform: uppercase;
+
   color: #ffffff;
+
   mix-blend-mode: normal;
   opacity: 0.5;
 }
@@ -400,6 +406,7 @@ nav, .navbar__list {
 }
 
 .questions__btn:hover {
+
   border: none;
   background: #20e372;
   border-radius: 6px;
@@ -409,7 +416,6 @@ nav, .navbar__list {
   color: white;
   transition: all 0.3s ease;
 }
-
 .questions__btn:active {
   width: 230px;
   height: 76px;
@@ -455,4 +461,4 @@ nav, .navbar__list {
 .footer__link:hover {
   color: red;
   transition: all 0.3s linear;
-}/*# sourceMappingURL=create.css.map */
+}
