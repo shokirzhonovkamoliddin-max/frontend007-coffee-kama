@@ -21,8 +21,7 @@ li {
   margin: auto;
 }
 
-nav,
-.navbar__list {
+nav, .navbar__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -244,4 +243,4 @@ nav,
 .footer__link:hover {
   color: red;
   transition: all 0.3s linear;
-} /*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */
