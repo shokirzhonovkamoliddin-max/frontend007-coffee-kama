@@ -303,7 +303,15 @@ nav,
   .navbar__burger {
     width: 10px;
     height: 4px;
-    background-color: #000000;
+  }
+  .navbar__burger__1 {
+    margin-top: 2px;
+  }
+  .navbar__burger__2 {
+    margin-top: 2px;
+  }
+  .navbar__burger__3 {
+    margin-top: 2px;
   }
   .navbar__list {
     display: none;
@@ -351,7 +359,7 @@ nav,
     font-weight: 100;
   }
   .collection__item {
-    width: 20px;
+    width: 500px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -480,22 +488,94 @@ nav,
 }
 @media only screen and (max-width: 450px) {
   .footer {
-    width: 90%;
-    margin-top: 120px;
+    width: 100%;
+    margin-bottom: 200px;
   }
   .footer__container {
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
     height: auto;
-    padding: 40px 0;
+    padding: 60px 0;
     gap: 30px;
     text-align: center;
   }
   .footer__logo {
     width: 180px;
   }
-  .navbar__list {
-    flex-direction: column;
+  .footer__list {
     gap: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    margin: 24px auto;
+    width: 90%;
+  }
+  .intro__left {
+    margin: 80px 60px;
+  }
+  .intro__title {
+    width: 100%;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .intro__text {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .collection__list {
+    flex-direction: column;
+    gap: 48px;
+    margin-top: -20px;
+  }
+  .collection__item {
+    flex-direction: row;
+    text-align: left;
+    gap: 36px;
+  }
+  .collection__img {
+    width: 200px;
+  }
+  .collection__text {
+    max-width: 300px;
+  }
+}
+.promo__box {
+  padding: 80px 40px 260px;
+}
+
+.promo__text {
+  width: 100%;
+}
+
+.promo__cards {
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: -200px;
+}
+
+.promo__card {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .job__items {
+    gap: 20px;
+  }
+  .job__item {
+    width: 45%;
+  }
+  .job__text-item {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer__container {
+    padding: 40px 0;
   }
 }/*# sourceMappingURL=style.css.map */

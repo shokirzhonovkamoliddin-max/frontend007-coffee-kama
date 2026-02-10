@@ -315,8 +315,10 @@ nav,
   }
 }
 
+
 .footer {
   margin-top: 150px;
+
 
   &__container {
     display: flex;
@@ -351,7 +353,18 @@ nav,
   .navbar__burger {
     width: 10px;
     height: 4px;
-    background-color: #000000;
+
+    &__1 {
+      margin-top: 2px;
+    }
+
+    &__2 {
+      margin-top: 2px;
+    }
+
+    &__3 {
+      margin-top: 2px;
+    }
   }
 
   .navbar {
@@ -406,7 +419,7 @@ nav,
       font-weight: 100;
     }
     &__item {
-      width: 20px;
+      width: 500px;
     }
   }
 }
@@ -506,7 +519,6 @@ nav,
   }
 }
 
-
 @media only screen and (max-width: 450px) {
   .job {
     width: 90%;
@@ -522,7 +534,7 @@ nav,
     }
 
     &__img {
-      display: none; 
+      display: none;
     }
 
     &__items {
@@ -561,17 +573,16 @@ nav,
   }
 }
 
-
 @media only screen and (max-width: 450px) {
   .footer {
-    width: 90%;
-    margin-top: 120px;
-
+    width: 100%;
+    margin-bottom: 200px;
     &__container {
-      flex-direction: column;
-      justify-content: center;
+    flex-direction: column;
+
+      width: 100%;
       height: auto;
-      padding: 40px 0;
+      padding: 60px 0;
       gap: 30px;
       text-align: center;
     }
@@ -581,8 +592,98 @@ nav,
     }
   }
 
-  .navbar__list {
-    flex-direction: column;
+  .footer__list {
     gap: 15px;
+  }
+}
+
+
+
+
+ @media only screen and (max-width:768px){
+   .intro {
+    margin: 24px auto;
+    width: 90%;
+  }
+
+  .intro__left {
+    margin: 80px 60px;
+  }
+
+  .intro__title {
+    width: 100%;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .intro__text {
+    width: 100%;
+    font-size: 15px;
+  }
+
+ }
+ @media only screen and (max-width:768px){
+   .collection__list {
+    flex-direction: column;
+    gap: 48px;
+    margin-top: -20px;
+  }
+
+  .collection__item {
+    flex-direction: row;
+    text-align: left;
+    gap: 36px;
+  }
+
+  .collection__img {
+    width: 200px;
+  }
+
+  .collection__text {
+    max-width: 300px;
+  }
+
+ }
+
+  .promo__box {
+    padding: 80px 40px 260px;
+  }
+
+  .promo__text {
+    width: 100%;
+  }
+
+  .promo__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: -200px;
+  }
+
+  .promo__card {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+
+
+   @media only screen and (max-width:768px){
+    .job__items {
+      gap: 20px;
+  }
+
+  .job__item {
+    width: 45%;
+  }
+
+  .job__text-item {
+    width: 100%;
+  }
+
+   }
+
+  @media only screen and (max-width:768px) {
+     .footer__container {
+    padding: 40px 0;
   }
 }

@@ -245,7 +245,6 @@ nav,
 
 .footer {
   width: 100%;
-  margin-top: 150px;
 
   &__container {
     display: flex;
@@ -276,16 +275,23 @@ nav,
   }
 }
 
+@media (max-width: 450px) {
+  .container {
+    width: 100%;
+    margin: 0 20px;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .footer {
-    width: 90%;
-    margin-top: 120px;
-
+    width: 100%;
+    margin-bottom: 200px;
     &__container {
       flex-direction: column;
-      justify-content: center;
+
+      width: 100%;
       height: auto;
-      padding: 40px 0;
+      padding: 60px 0;
       gap: 30px;
       text-align: center;
     }
@@ -295,43 +301,41 @@ nav,
     }
   }
 
-  .navbar__list {
-    flex-direction: column;
+  .footer__list {
     gap: 15px;
   }
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .intro {
     width: 90%;
     background-image: url("/Images/Group 7 (2).png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 90%;
     height: 250px;
-  
-  
-  
+
     &__left {
-      margin: 0;
+      margin-top: -100px;
       text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
 
     &__title {
       width: 70%;
       height: auto;
-      font-size: 10px;
-      line-height: 10px;
+      font-size: 20px;
     }
 
     &__text {
       width: 70%;
-      font-size: 20px;
+      font-size: 10px;
     }
   }
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .our {
     width: 90%;
 
@@ -342,7 +346,7 @@ nav,
 
     &__img {
       margin: 0;
-      width: 70%;
+      width: 300px;
       height: auto;
     }
 
@@ -363,25 +367,25 @@ nav,
   }
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .promo {
     width: 90%;
     margin-top: 80px;
 
-    &__container {
-      flex-direction: column;
-      padding: 40px 20px;
-      text-align: center;
+    .promo__container {
+      margin: auto;
     }
 
     &__box {
-      width: 100%;
+      flex-direction: column;
+
+      width: 80%;
       height: auto;
-      margin: 0;
+      margin: auto;
     }
 
     &__title {
-      font-size: 28px;
+      font-size: 8px;
       line-height: 32px;
     }
 
@@ -395,5 +399,113 @@ nav,
       height: auto;
       margin-top: 30px;
     }
+  }
+}
+
+@media only screen and (450px) {
+  .work__items {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 24px;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  .navbar__list {
+    gap: 32px;
+  }
+
+  .navbar__burger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    width: 90%;
+  }
+
+  .intro__left {
+    margin: 80px 60px;
+  }
+
+  .intro__title {
+    width: 100%;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .intro__text {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .collection__list {
+    flex-direction: column;
+    gap: 48px;
+    margin-top: -20px;
+  }
+
+  .collection__item {
+    flex-direction: row;
+    text-align: left;
+    gap: 36px;
+  }
+
+  .collection__img {
+    width: 200px;
+  }
+
+  .collection__text {
+    max-width: 300px;
+  }
+}
+
+.promo__box {
+  padding: 80px 40px 260px;
+}
+
+.promo__text {
+  width: 100%;
+}
+
+.promo__cards {
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: -200px;
+}
+
+.promo__card {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .job__items {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .job__item {
+    width: 45%;
+  }
+
+  .job__text-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__container {
+    padding: 40px 0;
   }
 }
